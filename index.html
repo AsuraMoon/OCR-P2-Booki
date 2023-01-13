@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"><body>
+
+    <!-- Section Logo + Categories-->
+    <header>
+        <img src="Assets\logo\Booki.png" alt="LogoBookiMobile" id="Logo">
+        <menu>
+            <li>
+                <a href="#"> 
+                    <button>Hébergement</button>
+                </a>
+            </li>
+            <li>
+                <a href="#"> 
+                    <button>Activités</button>
+                </a>
+            </li>
+        </menu>
+    </header>
+
+    <!--Form Choix ville-->
+    <section class="Location">
+        <p>
+            <h3>Trouver votre Hébergement pour des vacances de rêve</h3>
+            En plein centre-ville ou en pleine nature
+        </p>
+        <form action="post"> 
+            <div class="Location"><img src="Assets\icons\location-dot-solid.svg" alt="LocationIcon" class="Location"></div>  
+            <input type="text" name="Ville" placeholder="Marseille, France" id="TextVille">  
+            <input type="submit" value="Rechercher" id="RechercherVille">    
+        </form>       
+    </section>   
+
+    <!--Filtres-->
+    <section class="Filtres">
+        <h3>Filtres</h3>
+        <li>
+            <a href="#">                
+                <button><img src="Assets\icons\money-bill-wave-solid.svg" alt="MoneyIcon" class="Filtres">Économique</button>
+            </a>
+        </li>
+        <li>
+            <a href="#">                 
+                <button><img src="Assets\icons\person-solid.svg" alt="PersonIcon" class="Filtres">Familial</button>
+            </a>
+        </li> 
+        <li>
+            <a href="#">                 
+                <button><img src="Assets\icons\heart-solid.svg" alt="HeartIcon" class="Filtres">Romantique</button>
+            </a>
+        </li>
+        <li>
+            <a href="#">                
+                <button><img src="Assets\icons\dog-solid.svg" alt="DogIcon" class="Filtres">Animaux Autorisés</button>
+            </a>
+        </li>         
+    </section>
+    <p>
+        <img src="Assets\icons\info-solid.svg" alt="InfoIcon"> 
+        Plus de 500 logements sont disponibles dans cette ville
+    </p> 
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+/* Reset Margin + Policy*/
+*{
+    margin: 0;
+    font-family: 'Raleway'
+}
+
+/*Global Margin*/
+
+body{
+    margin-left: 55px;
+    margin-right: 55px;
+    max-width: 1290px;
+    font-weight: 400;
+}
+
+/* Header*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-bottom: 68px;
+}
+
+h3{
+    font-weight: 700;
+}
+
+header img{
+    width: 62px;
+    height: 19px;
+    margin-top: 45px;
+}
+
+menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 34px;
+}
+
+li{
+    text-align: center;
+}
+
+header button {
+    width: 7rem;
+    border: none;
+    background-color: white;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    padding-top: 45px;
+}
+
+header button:hover {
+    border-top: 2px solid #0065FC ;
+    color: #0065FC;
+    padding-top: 44px;
+}
+
+/*Search Bar*/
+
+section p{
+    margin-bottom: 20px;
+}
+
+section form{
+    text-align: center ;
+    padding: 15px;
+    padding-left: 0;
+    width:fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+div.Location{
+    background-color: #d9d9d9;
+    height: 50px;
+    width: 50px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+img.Location{
+    height: 20px;
+    width: 20px;
+    padding-top: 15px;
+}
+
+#TextVille{
+    border: 1px #d9d9d9 solid;
+    font-weight: bold;
+    color: black;
+    padding-left: 15px;
+    margin-left: -1px;
+}
+
+#TextVille::placeholder {
+    color: #777777;
+    opacity: 1;
+  }
+
+#RechercherVille{
+    border: 1px #0065FC solid;
+    margin-left: -1px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+}
+
+/* Filtres */
+
+section.Filtres{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+} 
+
+section.Filtres h3{
+    padding-top: 15px;
+}
+
+section.Filtres button{
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin-left: 15px;
+    border-radius: 40px;
+    padding: 10px;
+    padding-top: 15px;
+    border: #d9d9d9 1px solid;
+    min-width: 11rem;
+}
+section.Filtres button:hover{
+    background-color: #deebff;
+}
+
+
+img.Filtres{
+    max-width: 15px;
+    max-height: 15px;
+    fill: #0065FC !important;
+}
+
+/* Infobulle */
+p{
+    margin-top: 50px;
+    display: flex;
+}
+
+p img{
+    height: 10px;
+    width: 4px;
+    border-radius: 100%;
+    border: #777777 1px solid;
+    padding: 7px 10px;
+    margin-right: 10px;
+    margin-top: -5px;
+}
