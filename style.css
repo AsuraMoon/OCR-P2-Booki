@@ -75,11 +75,6 @@ header button:hover {
 }
 
 /*Search Bar*/
-
-section p{
-    margin-bottom: 20px;
-}
-
 section form{
     text-align: center ;
     padding: 15px;
@@ -178,15 +173,14 @@ p svg{
 /* Main */
 
 main{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
 }
 
 article.Hebergements{
-    grid-column: 1/4;
     background-color: #d9d9d9;
     border-radius: 40px;
-    padding: 40px;
+    padding: 2vw;
+    width: 60vw;
 }
 
 article.Populaires{
@@ -194,7 +188,8 @@ article.Populaires{
     background-color: #d9d9d9;
     margin-left: 40px;
     border-radius: 40px;
-    padding: 40px;
+    width: 40vw;
+    padding-top: 35px;
 }
 
 /* Hebergements */
@@ -202,33 +197,32 @@ article.Populaires{
 h3.Hebergements{
     margin-bottom: 25px;
     font-weight: 700;
+    margin-top: 15px;
 }
 
 
 main.Hebergements{
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-bottom: 25px;
 }
 
 section.Hebergements{
     background-color: white;
     border-radius: 25px;
-    margin: 20px;
+    margin: 1vw;
     padding: 0px;
-    height: 225px;
-    box-sizing: content-box;
+    height: max-content;
+    min-width: 10vw;
     object-fit: cover;
 }
 
 img.Hebergements{
-    padding: 0px;
-    margin: 0px;
-    margin-bottom: 5px;
-    width: 100%;
-    height: 50%;
-    object-fit: cover;
     border-radius: 25px 25px 0px 0px;
+    height: 8rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
 }
 
 p.Hebergements{
@@ -241,6 +235,45 @@ footer.Hebergements{
 
 /* Populaires */
 
+h3.PopulairesTitre{
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 main.Populaires{
     display: flex;
+    flex-direction: column;
 }
+
+p.Populaires{
+    margin-top: 20px;
+}
+
+section.Populaires{
+    background-color: white;
+    border-radius: 25px;
+    margin: 20px;
+    padding: 0px;
+    height: 125px;
+    width: 85%;
+    display: flex;
+    object-fit: cover;
+}
+
+aside.Populaires{
+    padding-top: 15px;
+    padding-bottom: 35px;
+}
+
+img.Populaires{
+    border-radius: 25px 0 0 25px;
+    width: 40%;
+    object-fit: cover;
+    margin-right: 2vw;
+}
+
+/* ACTIVATES */
+
