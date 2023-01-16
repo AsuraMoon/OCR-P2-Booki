@@ -28,7 +28,7 @@ body{
 
 /* Header*/
 
-header{
+header.Logo{
     display: flex;
     justify-content: space-between;
     font-size: 16px;
@@ -57,7 +57,7 @@ li{
     text-align: center;
 }
 
-header button {
+a.Logo {
     width: 7rem;
     border: none;
     background-color: white;
@@ -65,13 +65,13 @@ header button {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    padding-top: 45px;
+    margin-top: 45px;
 }
 
-header button:hover {
+a.Logo:hover {
     border-top: 2px solid #0065FC ;
     color: #0065FC;
-    padding-top: 44px;
+    padding-top: 43px;
 }
 
 /*Search Bar*/
@@ -125,19 +125,15 @@ img.Location{
 
 /* Filtres */
 
-nav{
-    display: flex;
+menu.Filtres{
+    display: inline-flex;
     flex-direction: row;
     list-style: none;
     padding: 0;
     margin-top: 30px;
 } 
 
-nav h3{
-    padding-top: 15px;
-}
-
-nav button{
+menu a{
     background-color: white;
     text-decoration: none;
     color: black;
@@ -150,7 +146,13 @@ nav button{
     min-width: 11rem;
 }
 
-nav button:hover{
+strong.Filtres{
+    font-size: xx-large;
+    font-weight: 800;
+    margin-top: -10px;
+}
+
+menu a:hover{
     background-color: #deebff;
 }
 
@@ -201,7 +203,7 @@ h3.Hebergements{
 }
 
 
-main.Hebergements{
+div.Hebergements{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 25px;
@@ -243,7 +245,7 @@ h3.PopulairesTitre{
     padding-right: 25px;
 }
 
-main.Populaires{
+div.Populaires{
     display: flex;
     flex-direction: column;
 }
@@ -275,5 +277,26 @@ img.Populaires{
     margin-right: 2vw;
 }
 
-/* ACTIVATES */
+/* ACTIVITES */
 
+h3.Activites{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 35px;
+}
+
+div.Activites{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    width: 96vw;
+}
+
+section.Activites{
+    width: 20vw;
+    object-fit: cover;
+}
+
+img.Activites{
+    width: 100%;
+    object-fit: cover;
+}
