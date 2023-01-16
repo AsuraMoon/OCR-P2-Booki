@@ -3,6 +3,19 @@
     margin: 0;
     font-family: 'Raleway'
 }
+a{
+ text-decoration: none;
+ color: black;
+}
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.Note{
+    max-width: 15px;
+    max-height: 15px;
+}
 
 /*Global Margin*/
 
@@ -161,47 +174,73 @@ p svg{
     margin-right: 10px;
     margin-top: -5px;
 }
+
 /* Main */
 
 main{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-    margin-top: 40px;
+    grid-template-columns: repeat(4, 1fr);
 }
 
-#Heberg{
-    grid-column: 1/5;
+article.Hebergements{
+    grid-column: 1/4;
     background-color: #d9d9d9;
     border-radius: 40px;
     padding: 40px;
 }
 
-#Popular{
-    grid-column: 5;
+article.Populaires{
+    grid-column: 4;
     background-color: #d9d9d9;
     margin-left: 40px;
     border-radius: 40px;
     padding: 40px;
 }
 
-/* Heberg */
+/* Hebergements */
 
-#Herberg main{
-    display: flex;
-}
-
-article header{
+h3.Hebergements{
+    margin-bottom: 25px;
     font-weight: 700;
 }
 
-.Note{
-    max-width: 15px;
-    max-height: 15px;
+
+main.Hebergements{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin-bottom: 25px;
 }
 
-#Heberg main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+section.Hebergements{
+    background-color: white;
+    border-radius: 25px;
+    margin: 20px;
+    padding: 0px;
+    height: 225px;
+    box-sizing: content-box;
+    object-fit: cover;
+}
+
+img.Hebergements{
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+
+p.Hebergements{
+    margin: 0px;
+}
+
+footer.Hebergements{
+    padding-left: 5px;
+}
+
+/* Populaires */
+
+main.Populaires{
+    display: flex;
 }
