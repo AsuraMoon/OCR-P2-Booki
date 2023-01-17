@@ -8,6 +8,7 @@
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 a:visited {
@@ -78,10 +79,9 @@ section form{
 }
 
 div.Location{
-    background-color: #d9d9d9;
-    height: 50px;
-    width: 50px;
-    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    flex-direction: row;
+
 }
 
 img.Location{
@@ -90,7 +90,7 @@ img.Location{
     padding-top: 15px;
 }
 
-#TextVille{
+input.Location{
     border: 1px #d9d9d9 solid;
     font-weight: bold;
     color: black;
@@ -322,9 +322,8 @@ footer.Fin{
     display: flex;
     justify-content: space-around;
     width: 92vw;
-    max-width: 1400px;
+    max-width: 1290px;
     margin-top: 60px;
-    margin-right: 55px;
     background-color: #F2F2F2;
 }
 
@@ -345,4 +344,104 @@ a.Fin{
 
 /* MEDIA QUERIES */
 
-@media (768px <= width <= 992px ) { ... }
+@media (768px <= width <= 992px ) { 
+    
+main{
+    flex-direction: column;
+} 
+
+article.Hebergements {
+    width: 85vw;
+    margin-bottom: 50px;
+}
+
+article.Populaires {
+    background-color: #d9d9d9;
+    margin-left: 0px;
+    width: 90vw;
+}
+
+div.Populaires{
+    flex-direction: row;
+}
+
+section.Populaires{
+    height: fit-content;
+    min-height: 185px;
+}
+aside.Populaires{
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img.Populaires{
+    margin-right: 0px;
+}
+
+p.Populaires{
+    margin-top: 0px;
+}
+
+}
+
+@media (width <= 768px ) {
+
+    
+body{
+    margin-left: unset;
+    margin-right: unset;
+    max-width: 1290px;
+    font-weight: 400;
+}
+
+/* HEADER */
+
+header.Logo{
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: unset;
+}
+
+nav.Logo{
+    width: 100%;
+}
+
+a.Logo:hover{
+    border-top: unset;
+    padding-top: unset;
+}
+
+ul.Logo{
+    padding: unset;
+    padding-top: 45px;
+}
+
+li.Logo{
+    width: 50%;
+    padding: 0px;
+    padding-bottom: 45px;
+    margin-bottom: 31px;
+}
+
+li.Logo:hover{
+    border-bottom: #0065FC 3px solid;
+}
+
+/* LOCATION */
+
+section.Location{
+    padding-left: 5%;
+    width: unset;
+}
+
+p.Location{
+    margin-top: 15px;    
+}
+
+form.Location{
+    padding: unset;
+    margin-top: 35px;
+}
+}
