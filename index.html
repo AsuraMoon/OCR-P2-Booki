@@ -10,17 +10,22 @@
 
     <!-- Section Logo + Categories-->
     <header class="Logo">
-        <img src="Assets/logo/Booki.png" alt="LogoBookiMobile" class="Logo">
-        <span class="Logo">
-            <a href="#" class="Logo"> 
+        <a href="index.html">
+            <img src="Assets/logo/Booki.png" alt="LogoBookiMobile" class="Logo">
+        </a>
+        <div class="Logo">
+            <span class="Logo">
+                <a href="#AncHebergements" class="Logo">
                     Hébergement
-            </a>
+                </a>
+            </span>
     
-            <a href="#" class="Logo"> 
-                Activités
-            </a>
-        </span>
-
+            <span class="Logo">
+                <a href="#AncActivites" class="Logo"> 
+                    Activites
+                </a>
+            </span>
+        </div>
     </header>
 
     <!--Form Choix ville-->
@@ -85,7 +90,7 @@
     <main>
 
         <!-- HERBEGEMENTS -->
-        <article class="Hebergements">
+        <article class="Hebergements" id="AncHebergements">
             <h3 class="Hebergements">
                 Hébergements à Marseille
             </h3>
@@ -327,29 +332,61 @@
 
     <!-- ACTIVITES -->
 
-    <article class="Activites">
+    <article class="Activites" id="AncActivites">
         <h3 class="Activites">
             Activités à Marseille
         </h3>
         <div class="Activites">
-            <section class="Activites">
-                <img src="Assets/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="LePort" class="Activites">
-                Vieux-Port
-            </section>
-            <section class="Activites">
-                <img src="Assets/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="LeFort" class="Activites">
-                Fort de Pomègues
-            </section>
-            <section class="Activites">
-                <img src="Assets/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="LesCailloux" class="Activites">
-                Parc national des Calanques
-            </section>
-            <section class="Activites">
-                <img src="Assets/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="BonneMère" class="Activites">
-                Notre-Dame-de-la-Garde                
-            </section>
+            <a href="#">
+                <section class="Activites">
+                    <img src="Assets/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="LePort" class="Activites">
+                    <footer class="Activites">Vieux-Port</footer>
+                </section>
+            </a>
+            <a href="#">
+                <section class="Activites">
+                    <img src="Assets/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="LeFort" class="Activites">
+                    <footer class="Activites">Fort de Pomègues</footer>
+                </section>
+            </a>
+            <a href="#">
+                <section class="Activites">
+                    <img src="Assets/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="LesCailloux" class="Activites">
+                    <footer class="Activites">Parc national des Calanques</footer>
+                </section>
+            </a>
+            <a href="#">
+                <section class="Activites">
+                    <img src="Assets/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="BonneMère" class="Activites">
+                    <footer class="Activites">Notre-Dame-de-la-Garde  </footer>              
+                </section>
+            </a>
         </div>
     </article>
 
+    <footer class="Fin">
+        <section class="Fin">
+            <h3 class="Fin">
+                À propos
+            </h3>
+            <a href="#" class="Fin">Fonctionnement du site</a>
+            <a href="#" class="Fin">Conditions générales </a>
+            <a href="#" class="Fin">Données et confidentialité</a>              
+        </section>
+        <section class="Fin">
+            <h3 class="Fin">
+                Nos hébergements
+            </h3>
+            <a href="#" class="Fin">Charte qualité</a>
+            <a href="#" class="Fin">Proposer votre hôtel</a>
+        </section>
+        <section class="Fin">
+            <h3 class="Fin">
+                Assistance
+            </h3>
+             <a href="#" class="Fin">Centre d'aide</a>
+             <a href="#" class="Fin">Nous contacter</a>
+        </section>
+    </footer>
 </body>
 </html>
