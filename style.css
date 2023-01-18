@@ -488,3 +488,22 @@ i.LocationButton{
 }
 
 /* FILTRES */
+
+menu.Filtres{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    row-gap: 2.5rem;
+    margin-top: 2.5rem;
+    column-gap: 1rem;
+}
+
+li.Filtres{
+    flex: 2 auto;
+}
+
+a.Filtres{
+    margin: unset;
+    padding: 1rem;
+    min-width: unset;
+}
