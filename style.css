@@ -485,25 +485,36 @@ span.LocationButton{
 i.LocationButton{
     display: inline;
 }
-}
 
 /* FILTRES */
 
+strong.Filtres{
+    margin: 0.75rem;
+}
+
 menu.Filtres{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-flow: row wrap;
-    row-gap: 2.5rem;
-    margin-top: 2.5rem;
+    gap: 1.5rem;
     column-gap: 1rem;
+    margin: 0.5rem;
 }
 
 li.Filtres{
     flex: 2 auto;
+    width: calc(35% - 0.5rem);
+    vertical-align: middle;
 }
 
 a.Filtres{
+    display: block;
     margin: unset;
-    padding: 1rem;
+    padding: 0.5rem;
     min-width: unset;
+    width: 10rem;
+    font-weight: 700;
+    font-size: 11px;
+}
+
 }
