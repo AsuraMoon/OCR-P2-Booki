@@ -33,19 +33,26 @@
 
     <!--Form Choix ville-->
     <section class="Location">
-        <h3 class="Location">Trouver votre Hébergement pour des vacances de rêve</h3>
-        <p class="Location">
-            En plein centre-ville ou en pleine nature
-        </p>
-        <div class="Location">
-            <i class="fa-solid fa-location-dot"></i>
-            <form action="post" class="Location"> 
-                <input type="text" name="Ville" placeholder="Marseille, France" class="Location">
-                <label for="">
-                    <input type="submit" value="Rechercher" id="RechercherVille">
-                </label>  
-            </form>    
-        </div>     
+        <header>
+            <h3 class="Location">Trouver votre Hébergement pour des vacances de rêve</h3>
+            <p class="Location">
+                En plein centre-ville ou en pleine nature
+            </p>
+        </header>
+
+        <form action="GET" class="Location"> 
+            <span class="Location">
+                <i class="fa-solid fa-location-dot Location"></i>
+            </span>
+            <input type="text" name="Ville" placeholder="Marseille, France" class="Location">
+            <button class="Location">
+                <span class="LocationButton">
+                    Rechercher
+                </span>
+                <i class="LocationButton fas fa-search"></i>
+            </button>
+        </form>  
+   
     </section>   
 
     <!--Filtres-->

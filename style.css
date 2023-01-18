@@ -24,7 +24,7 @@ a:visited {
 body{
     margin-left: 55px;
     margin-right: 55px;
-    max-width: 1290px;
+    max-width: 1300px;
     font-weight: 400;
 }
 
@@ -69,50 +69,55 @@ h3{
     font-weight: 700;
 }
 
-section form{
-    text-align: center ;
-    padding: 15px;
-    padding-left: 0;
-    width:fit-content;
-    display: flex;
-    flex-direction: row;
+section.Location{
+    margin-bottom: 35px;
 }
 
 div.Location{
     display: inline-flex;
 }
 
-i.fa-location-dot{
-    height: 15px;
-    width: 15px;
-    padding-top: 15px;
+
+p.Location{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+form.Location{
+    display: flex;
+    width: 100%;
+    overflow: auto;
+}
+
+span.Location{
+    background-color: #f2f2f2;
+    padding: 1rem 1.25rem;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
 }
 
 input.Location{
-    border: 1px #d9d9d9 solid;
-    font-weight: bold;
-    color: black;
-    padding-left: 15px;
-    margin-left: -1px;
+    border: none;
+    border-top: #f2f2f2 1px solid;
+    border-bottom: #f2f2f2 1px solid;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    width: 14rem;
 }
 
-#TextVille::placeholder {
-    color: #777777;
-    opacity: 1;
-  }
-
-#RechercherVille{
-    border: 1px #0065FC solid;
-    margin-left: -1px;
-    border-radius: 0px 15px 15px 0px;
+button.Location {
     background-color: #0065FC;
     color: white;
-    font-weight: bold;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    padding: 0 1.5rem;
+    cursor: pointer;
 }
 
-#RechercherVillePortable{
+i.LocationButton{
     display: none;
 }
+
 
 /* Filtres */
 
@@ -295,8 +300,8 @@ h3.Activites{
 div.Activites{
     display: grid;
     grid-template-columns: repeat(4 , 1fr);
-    width: 96vw;
-    max-width: 1344px;
+    column-gap: 2rem;
+    margin: 4rem 0;
 }
 
 article.Activites{
@@ -317,7 +322,7 @@ footer.Activites{
     padding-bottom: 15px;
     background-color: white;
     margin-top: -5px;
-    padding-top: 3px;
+    padding-top: 15px;
     padding-left: 5px;
     border-radius: 0px 0px 25px 25px;
     font-weight: 700;
@@ -330,8 +335,7 @@ footer.Activites{
 footer.Fin{
     display: flex;
     justify-content: space-around;
-    width: 92vw;
-    max-width: 1290px;
+    width: 100%;
     margin-top: 60px;
     background-color: #F2F2F2;
 }
@@ -352,6 +356,7 @@ a.Fin{
 }
 
 /* MEDIA QUERIES */
+/** TABLETTES **/
 
 @media (768px <= width <= 992px ) { 
     
@@ -359,12 +364,12 @@ main{
     flex-direction: column;
 } 
 
-article.Hebergements {
+section.Hebergements {
     width: 85vw;
     margin-bottom: 50px;
 }
 
-article.Populaires {
+section.Populaires {
     background-color: #d9d9d9;
     margin-left: 0px;
     width: 90vw;
@@ -374,7 +379,7 @@ div.Populaires{
     flex-direction: row;
 }
 
-section.Populaires{
+article.Populaires{
     height: fit-content;
     min-height: 185px;
 }
@@ -395,13 +400,15 @@ p.Populaires{
 
 }
 
+/** PHONES **/
+
 @media (width <= 768px ) {
 
     
 body{
     margin-left: unset;
     margin-right: unset;
-    max-width: 1290px;
+    max-width: 768px;
     font-weight: 400;
 }
 
@@ -430,8 +437,8 @@ ul.Logo{
 li.Logo{
     width: 50%;
     padding: 0px;
-    padding-bottom: 45px;
-    margin-bottom: 31px;
+    padding-bottom: 1rem;
+    margin-bottom: 1.75rem;
 }
 
 li.Logo:hover{
@@ -441,8 +448,25 @@ li.Logo:hover{
 /* LOCATION */
 
 section.Location{
-    padding-left: 5%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+article.Location{
     width: unset;
+}
+
+input.Location{
+    width: 20rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color: black;
+}
+
+input.Location::placeholder{
+    font-weight: 700;
+    font-size: 1rem;
+    color: black;
 }
 
 p.Location{
@@ -453,4 +477,14 @@ form.Location{
     padding: unset;
     margin-top: 35px;
 }
+
+span.LocationButton{
+    display: none;
 }
+
+i.LocationButton{
+    display: inline;
+}
+}
+
+/* FILTRES */
