@@ -1,14 +1,24 @@
-/* Reset Margin + Policy*/
-/*Global Margin*/
-
+/* Reset + Font*/
 *{
-    margin: 0;
+    margin: unset;
     font-family: 'Raleway';
+    padding: unset;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+body{
+    max-width: 1400px;
+    font-weight: 400;
+}
 
 /* COLOR */
-
 .Blue{
     color: #0065FC;
 }
@@ -34,73 +44,46 @@
     background-color: #F2F2F2;
 }
 
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-a:visited {
-    text-decoration: none;
-    color: black;
-}
-
-.Note{
-    max-width: 15px;
-    max-height: 15px;
-}
-
-body{
-    max-width: 1400px;
-    font-weight: 400;
-}
-
 /* HEADER*/
-
 header.Logo{
     display: flex;
     justify-content: space-between;
-    font-size: 16px;
-    margin-bottom: 68px;
-
 }
-
 header img{
-    width: 62px;
-    height: 19px;
-    margin-top: 45px;
+    width: 4rem;
+    margin: 1rem;
 }
-
-ul.Logo{
+ul.LogoNav{
     list-style-type: none;
     display: flex;
-    padding: 45px;
 }
-
-a.Logo{
-    padding-left: 25px;
-    padding-right: 25px;
+li.LogoNav{
+    min-width: 10rem;
+    text-align: center;
+    padding: 1.5rem;
 }
-
-a.Logo:hover{
-    color: #0065FC;
+li.LogoNav:hover{
     border-top: #0065FC 3px solid;
-    padding-top: 43px;
+    padding-top: 1.313rem;
 }
+a.LogoNav:hover{
+    color: #0065FC;
+}
+
 
 /* LOCATION */
+section.Location{
+    margin-top: 15rem;
+}
 
 form.Location{
     overflow: visible;
 }
-
-h3{
+h3.location{
     font-weight: 700;
+    margin-top: 15rem;
 }
 
-section.Location{
-    margin-bottom: 35px;
-}
 
 div.Location{
     display: inline-flex;
@@ -459,17 +442,17 @@ a.Logo:hover{
     border-top: unset;
     padding-top: unset;
 }
-ul.Logo{
+ul.LogoNav{
     padding: unset;
     padding-top: 45px;
 }
-li.Logo{
+li.LogoNav{
     width: 50%;
     padding: 0px;
     padding-bottom: 1rem;
     margin-bottom: 1.75rem;
 }
-li.Logo:hover{
+li.LogoNav:hover{
     border-bottom: #0065FC 3px solid;
 }
 
@@ -549,8 +532,9 @@ p.Filtres{
 }
 
 /* RESULTATS RECHERCHE */
-span.RechercheResult{
+div.RechercheResult{
     margin-top: 1rem;
+    display: inline;
 }
 
 /* MAIN */
