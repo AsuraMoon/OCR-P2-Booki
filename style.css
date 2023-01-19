@@ -139,9 +139,10 @@ menu.Filtres{
     list-style: none;
     padding: 0;
     margin-top: 30px;
+    margin-bottom: 6rem;
 } 
 
-menu a{
+li.Filtres{
     background-color: white;
     text-decoration: none;
     color: black;
@@ -152,6 +153,9 @@ menu a{
     padding-top: 15px;
     border: #d9d9d9 1px solid;
     min-width: 11rem;
+}
+a.Filtres{
+    display: flex;
 }
 
 strong.Filtres{
