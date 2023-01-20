@@ -73,41 +73,33 @@ a.LogoNav:hover{
 
 /* LOCATION */
 section.Location{
-    margin-top: 15rem;
+    margin-top: 10rem;
+    margin-left: 1rem;
 }
-
 form.Location{
     overflow: visible;
 }
 h3.location{
     font-weight: 700;
-    margin-top: 15rem;
 }
-
-
 div.Location{
     display: inline-flex;
 }
-
-
 p.Location{
     margin-top: 10px;
     margin-bottom: 15px;
 }
-
 form.Location{
     display: flex;
     width: 100%;
     overflow: auto;
 }
-
 span.Location{
     background-color: #f2f2f2;
     padding: 1rem 1.25rem;
     border-radius: 1rem 0 0 1rem;
     text-align: center;
 }
-
 input.Location{
     border: none;
     border-top: #f2f2f2 1px solid;
@@ -116,7 +108,6 @@ input.Location{
     box-sizing: border-box;
     width: 14rem;
 }
-
 button.Location {
     background-color: #0065FC;
     color: white;
@@ -125,43 +116,46 @@ button.Location {
     padding: 0 1.5rem;
     cursor: pointer;
 }
-
 i.LocationButton{
     display: none;
 }
 
 
 /* Filtres */
-
+div.Filtres{
+    display: flex;
+    vertical-align: baseline;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+}
 menu.Filtres{
     display: inline-flex;
     flex-direction: row;
     list-style: none;
     padding: 0;
-    margin-top: 30px;
-    margin-bottom: 6rem;
 } 
-
 li.Filtres{
     background-color: white;
     text-decoration: none;
     color: black;
     font-size: 16px;
-    margin-left: 15px;
     border-radius: 40px;
-    padding: 10px;
-    padding-top: 15px;
     border: #d9d9d9 1px solid;
     min-width: 11rem;
+    margin-left: 0.5rem;
+}
+h4.Filtres{
+    margin-left: 0.25rem;
 }
 a.Filtres{
     display: flex;
+    padding: 0.50rem;
 }
-
 strong.Filtres{
     font-size: xx-large;
     font-weight: 800;
-    margin-top: -10px;
+    margin-right: 1rem;
 }
 
 menu a:hover{
@@ -170,11 +164,12 @@ menu a:hover{
 
 /* Infobulle */
 
-span.RechercheResult{
-    display: flex;
-}
-
 div.RechercheResult{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+span.RechercheResult{
     height: 2rem;
     width: 2rem;
     min-height: 2rem;
@@ -187,7 +182,6 @@ div.RechercheResult{
     margin-right: 1rem;
     margin-left: 0.5rem;
 }
-
 h3.RechercheResult{
     display: inline;
 }
@@ -196,8 +190,8 @@ h3.RechercheResult{
 
 main{
     display: flex;
+    margin: 1rem;
 }
-
 section.Hebergements{
     background-color: #d9d9d9;
     border-radius: 40px;
@@ -205,7 +199,6 @@ section.Hebergements{
     width: 60vw;
     max-width: 800px;
 }
-
 section.Populaires{
     grid-column: 4;
     background-color: #d9d9d9;
@@ -264,26 +257,36 @@ footer.Hebergements{
 
 /* Populaires */
 
-h3.PopulairesTitre{
-    margin-bottom: 25px;
+div.PopulairesTitre{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
     padding-left: 25px;
     padding-right: 25px;
+    margin-bottom: 0.5rem;
 }
-
+span.PopulairesTitre{
+    height:fit-content;
+    padding: 1px;
+    border-bottom: #0065FC 2px solid;
+    border-left: #0065FC 2px solid;
+    color: #0065FC;
+    border-radius: 2px;
+}
+h3.PopulairesTitre{
+    display: flex;
+}
+div.DescriptionPopulaires{
+    display: inline;
+}
 div.Populaires{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
 }
-
 p.Populaires{
     margin-bottom: 20px;
     margin-top: unset;
     padding-right: 3px;
 }
-
 article.Populaires{
     background-color: white;
     border-radius: 25px;
@@ -294,7 +297,6 @@ article.Populaires{
     object-fit: cover;
     box-shadow:  0px 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
-
 aside.Populaires{
     display: flex;
     flex-direction: column;
@@ -302,12 +304,14 @@ aside.Populaires{
     padding-top: 15px;
     padding-bottom: 15px;
 }
-
 img.Populaires{
     border-radius: 25px 0 0 25px;
     width: 40%;
     object-fit: cover;
     margin-right: 2vw;
+}
+#More{
+    font-weight: 700;
 }
 
 /* ACTIVITES */
@@ -317,17 +321,17 @@ h3.Activites{
     padding: 0px;
     margin-top: 35px;
     margin-bottom: 15px;
+    margin-left: 1rem;
 }
 
 div.Activites{
     display: grid;
     grid-template-columns: repeat(4 , 1fr);
     column-gap: 2rem;
-    margin: 4rem 0;
+    margin: 4rem 1rem;
 }
 
 article.Activites{
-    width: 20vw;
     object-fit: cover;
     min-width: 190px;
 }
@@ -384,23 +388,29 @@ a.Fin{
     
 main{
     flex-direction: column;
-} 
-
-section.Hebergements {
-    width: 85vw;
-    margin-bottom: 50px;
 }
-
+section.Hebergements {
+    width: 100%;
+    margin-bottom: 50px;
+    max-width: unset;
+    padding: unset;
+    padding-bottom: 1rem;
+}
+h3.Hebergements{
+    margin-left: 1rem;
+}
+#More{
+    margin-left: 1rem;
+}
 section.Populaires {
     background-color: #d9d9d9;
     margin-left: 0px;
-    width: 90vw;
+    width: 100%;
+    max-width: unset;
 }
-
 div.Populaires{
     flex-direction: row;
 }
-
 article.Populaires{
     height: fit-content;
     min-height: 185px;
@@ -421,7 +431,7 @@ p.Populaires{
 }
 
 }
-
+/***********************************************************************/
 /** PHONES **/
 @media (width <= 768px ) {   
     
@@ -464,6 +474,7 @@ li.LogoNav:hover{
 section.Location{
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-top: 5rem;
 }
 article.Location{
     width: unset;
@@ -495,6 +506,10 @@ i.LocationButton{
 }
 
 /* FILTRES */
+div.Filtres{
+    display: flex;
+    flex-direction: column;
+}
 strong.Filtres{
     margin: 0.75rem;
 }
@@ -538,7 +553,6 @@ p.Filtres{
 /* RESULTATS RECHERCHE */
 div.RechercheResult{
     margin-top: 1rem;
-    display: inline;
 }
 
 /* MAIN */
