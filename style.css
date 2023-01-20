@@ -421,11 +421,12 @@ aside.Populaires{
     flex-direction: column;
     justify-content: space-between;
 }
-
+span.Populaires{
+    margin-bottom: 0.50rem;
+}
 img.Populaires{
     margin-right: 0px;
 }
-
 p.Populaires{
     margin-top: 0px;
 }
@@ -540,7 +541,7 @@ i.Filtres{
 }
 h4.Filtres{
     display: inline-block;
-    font-size: 700;
+    font-weight: 700;
     font-size: calc(0.66rem);
     margin-left: 0.25rem;
     vertical-align: middle;
@@ -561,6 +562,8 @@ main{
     flex-wrap: nowrap;
     flex-direction: column;
     flex-flow: column-reverse;
+    margin: unset;
+    padding: unset;
 }
 
 /* Populaires */
@@ -627,6 +630,9 @@ footer.Hebergements{
 }
 #More{
     display: none;
+}
+div.DescriptionHebergements{
+    margin-left: 0.75rem;
 }
 
 /* ACTIVITES */
