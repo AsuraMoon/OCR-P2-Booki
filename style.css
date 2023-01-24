@@ -8,50 +8,27 @@ a{
     text-decoration: none;
     color: black;
 }
-
 a:visited {
     text-decoration: none;
     color: black;
 }
 body{
-    max-width: 1400px;
+    max-width: 1440px;
     font-weight: 400;
 }
-
-/* COLOR */
 .Blue{
-    color: #0065FC;
-}
-.BlueBG{
-    background-color: #0065FC;
-}
-.LightBlue{
-    color: #DEEBFF;
-}
-.LightBlueBG{
-    background-color: #DEEBFF;
-}
-.Grey{
-    color: #d9d9d9;
-}
-.GreyBG{
-    background-color: #d9d9d9;
-}
-.LightGrey{
-    color: #F2F2F2;
-}
-.LightGreyBG{
-    background-color: #F2F2F2;
+    color:#0065FC;
 }
 
 /* HEADER*/
 header.Logo{
     display: flex;
     justify-content: space-between;
+    margin-left: 2%;
 }
 header img{
-    width: 4rem;
-    margin: 1rem;
+    height: 19px;
+    margin-top: 50px;
 }
 ul.LogoNav{
     list-style-type: none;
@@ -60,30 +37,30 @@ ul.LogoNav{
 li.LogoNav{
     min-width: 10rem;
     text-align: center;
-    padding: 1.5rem;
+    padding-top: 55px;
 }
 li.LogoNav:hover{
     border-top: #0065FC 3px solid;
-    padding-top: 1.313rem;
+    padding-top: calc(53px);
 }
-a.LogoNav:hover{
+li.LogoNav:hover>.LogoNav{
     color: #0065FC;
 }
 
-
 /* LOCATION */
 section.Location{
-    margin-top: 10rem;
-    margin-left: 1rem;
+    margin-top: 63px;
+    margin-left: 2%;
 }
 form.Location{
     overflow: visible;
 }
-h3.location{
-    font-weight: 700;
-}
 div.Location{
     display: inline-flex;
+    background-color: #f2f2f2;
+    padding: 16px 18px;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
 }
 p.Location{
     margin-top: 10px;
@@ -94,71 +71,77 @@ form.Location{
     width: 100%;
     overflow: auto;
 }
-span.Location{
-    background-color: #f2f2f2;
-    padding: 1rem 1.25rem;
-    border-radius: 1rem 0 0 1rem;
-    text-align: center;
-}
 input.Location{
     border: none;
     border-top: #f2f2f2 1px solid;
     border-bottom: #f2f2f2 1px solid;
     padding: 0 1.5rem;
     box-sizing: border-box;
-    width: 14rem;
+    width: 236px;
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+}
+input.Location::placeholder{
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
 }
 button.Location {
     background-color: #0065FC;
     color: white;
     border: none;
-    border-radius: 0 1.5rem 1.5rem 0;
-    padding: 0 1.5rem;
+    border-radius: 0 1rem 1rem 0;
+    padding: 0 0.50rem;
     cursor: pointer;
+    font-weight: 700;
 }
 i.LocationButton{
     display: none;
 }
 
-
 /* Filtres */
 div.Filtres{
     display: flex;
-    vertical-align: baseline;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    margin-left: 1rem;
+    vertical-align: center;
+    margin-top: 30px;
+    margin-left: 2%;   
+}
+h4.Filtres{
+    padding-top: 10px;
+    margin-left: 7px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: center;
 }
 menu.Filtres{
     display: inline-flex;
     flex-direction: row;
     list-style: none;
+    align-content: baseline;
     padding: 0;
 } 
 li.Filtres{
-    background-color: white;
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
     border-radius: 40px;
-    border: #d9d9d9 1px solid;
-    min-width: 11rem;
-    margin-left: 0.5rem;
+    margin-left: 35px;
 }
-h4.Filtres{
-    margin-left: 0.25rem;
+h5.Filtres{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    margin: 0px;
+    margin-left: 10px;
 }
 a.Filtres{
     display: flex;
-    padding: 0.50rem;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: #d9d9d9 1px solid;
 }
-strong.Filtres{
-    font-size: xx-large;
-    font-weight: 800;
-    margin-right: 1rem;
-}
-
-menu a:hover{
+a.Filtres:hover{
     background-color: #deebff;
 }
 
@@ -167,96 +150,106 @@ menu a:hover{
 div.RechercheResult{
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-top: 57px;
 }
 span.RechercheResult{
-    height: 2rem;
-    width: 2rem;
-    min-height: 2rem;
-    min-width: 2rem;
     border: solid 1px #d9d9d9;
     border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 1rem;
-    margin-left: 0.5rem;
+    margin-left: 2%;
+    padding: 6px 9px ;
+    margin-right: 10px;
+}
+i.RechercheResult{
+    font-size: 10px;
 }
 h3.RechercheResult{
     display: inline;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
 }
 
 /* Main */
-
 main{
     display: flex;
-    margin: 1rem;
+    margin: 40px 2% 60px;
 }
 section.Hebergements{
-    background-color: #d9d9d9;
-    border-radius: 40px;
-    padding: 2vw;
-    width: 60vw;
-    max-width: 800px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin-right: 1%;
+    width: 66%;
+    padding-right: 40px;
 }
 section.Populaires{
-    grid-column: 4;
-    background-color: #d9d9d9;
-    margin-left: 40px;
+    background-color: #F2F2F2;
+    margin-left: 1%;
     border-radius: 40px;
-    width: 40vw;
-    padding-top: 35px;
+    width: 33%;
 }
 
 /* Hebergements */
-
 h3.Hebergements{
     margin-bottom: 25px;
     font-weight: 700;
-    margin-top: 15px;
+    margin-top: 5%;
+    margin-left: 40px;
 }
-
-
 div.Hebergements{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 25px;
 }
-
-
 article.Hebergements{
+    border-radius: 20px;
+    margin-top: 10%;
+    margin-left: 40px;
+}
+a.Hebergements{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: white;
-    border-radius: 25px;
-    margin: 1vw;
-    padding: 0px;
-    height: max-content;
-    min-width: 5vw;
+    border-radius: 20px;
+    padding: 1%;
+    height: fit-content;
     box-shadow:  0px 0px 5px 5px rgba(0, 0, 0, 0.1);
-    min-height: 240px;
 }
-
 img.Hebergements{
-    border-radius: 25px 25px 0px 0px;
-    height: 8rem;
+    border-radius: 20px 20px 0px 0px;
+    height: 120px;
     object-fit: cover;
     max-width: 100%;
-    width: 100%;
 }
-
-p.Hebergements{
-    margin: 0px;
+h4.Hebergements{
+    margin-bottom: 9px;
 }
-
+div.DescriptionHebergements{
+    padding: 5%;
+    padding-bottom: 0px;
+    min-height: 85px;
+}
 footer.Hebergements{
-    padding-left: 5px;
-    padding-bottom: 10px;
+    padding: 5%;
+    padding-top: 0px;
+}
+.fa-star{
+    font-size: 12px;
+    width: 12px;
+    height: 12px;
+}
+#More{
+    display: block;
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 45px;
+    font-weight: 700;
 }
 
 /* Populaires */
-
 div.PopulairesTitre{
     display: flex;
     justify-content: space-between;    
@@ -310,9 +303,6 @@ img.Populaires{
     object-fit: cover;
     margin-right: 2vw;
 }
-#More{
-    font-weight: 700;
-}
 
 /* ACTIVITES */
 
@@ -321,16 +311,14 @@ h3.Activites{
     padding: 0px;
     margin-top: 35px;
     margin-bottom: 15px;
-    margin-left: 1rem;
+    margin-left: 2%;
 }
-
 div.Activites{
     display: grid;
     grid-template-columns: repeat(4 , 1fr);
     column-gap: 2rem;
-    margin: 4rem 1rem;
+    margin: 4rem 2%;
 }
-
 article.Activites{
     object-fit: cover;
     min-width: 190px;
@@ -361,7 +349,9 @@ footer.Activites{
 footer.Fin{
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    margin: 2%;
+    margin-bottom: 0px;
+    width: 96%;
     margin-top: 60px;
     background-color: #F2F2F2;
 }
@@ -384,7 +374,7 @@ a.Fin{
 /* MEDIA QUERIES */
 /** TABLETTES **/
 
-@media (768px <= width <= 992px ) { 
+@media (768px <= width < 992px ) { 
     
 main{
     flex-direction: column;
@@ -459,15 +449,17 @@ a.Logo:hover{
 }
 ul.LogoNav{
     padding: unset;
-    padding-top: 45px;
+    padding-top: 50px;
 }
 li.LogoNav{
     width: 50%;
     padding: 0px;
-    padding-bottom: 1rem;
     margin-bottom: 1.75rem;
 }
 li.LogoNav:hover{
+    margin: unset;
+    padding: unset;
+    border: unset;
     border-bottom: #0065FC 3px solid;
 }
 
@@ -475,7 +467,7 @@ li.LogoNav:hover{
 section.Location{
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 article.Location{
     width: unset;
@@ -516,24 +508,23 @@ strong.Filtres{
 }
 menu.Filtres{
     display: flex;
-    justify-content: space-between;
     flex-flow: row wrap;
-    gap: 1.5rem;
+    gap: 0.5rem;
     column-gap: 1rem;
-    margin: 0.5rem;
+    flex: 2 auto;
 }
 li.Filtres{
-    flex: 2 auto;
-    width: calc(35% - 0.5rem);
+    justify-content: center;
     vertical-align: middle;
+    width: 40%;
 }
 a.Filtres{
     display: block;
     margin: unset;
     padding: 0.50rem;
     min-width: unset;
-    width: 85%;
     font-weight: 700;
+    border-radius: 40px;
 }
 i.Filtres{
     font-size: 1rem;
