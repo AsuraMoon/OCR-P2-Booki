@@ -41,7 +41,7 @@ li.LogoNav{
 }
 li.LogoNav:hover{
     border-top: #0065FC 3px solid;
-    padding-top: calc(53px);
+    padding-top: calc(52px);
 }
 li.LogoNav:hover>.LogoNav{
     color: #0065FC;
@@ -87,7 +87,7 @@ input.Location::placeholder{
     font-weight: 700;
     font-size: 16px;
 }
-button.Location {
+button.Location{
     background-color: #0065FC;
     color: white;
     border: none;
@@ -196,7 +196,7 @@ section.Populaires{
 h3.Hebergements{
     margin-bottom: 25px;
     font-weight: 700;
-    margin-top: 5%;
+    margin-top: 40px;
     margin-left: 40px;
 }
 div.Hebergements{
@@ -253,15 +253,13 @@ footer.Hebergements{
 div.PopulairesTitre{
     display: flex;
     justify-content: space-between;    
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-bottom: 0.5rem;
+    margin: 40px 30px 25px;
 }
 span.PopulairesTitre{
     height:fit-content;
-    padding: 1px;
-    border-bottom: #0065FC 2px solid;
-    border-left: #0065FC 2px solid;
+    padding: 0.5px;
+    border-bottom: #0065FC 2.5px solid;
+    border-left: #0065FC 2.5px solid;
     color: #0065FC;
     border-radius: 2px;
 }
@@ -283,25 +281,28 @@ p.Populaires{
 article.Populaires{
     background-color: white;
     border-radius: 25px;
-    margin: 1.25rem;
-    padding: 0px;
+    margin: 30px 20px;
+    padding: 1%;
     height: 150px;
     display: flex;
     object-fit: cover;
     box-shadow:  0px 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
+h4.Populaires{
+    margin-bottom: 5px;
+}
 aside.Populaires{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 12px;
 }
 img.Populaires{
     border-radius: 25px 0 0 25px;
-    width: 40%;
+    width: 35%;
     object-fit: cover;
-    margin-right: 2vw;
+    margin-right: 15px;
 }
 
 /* ACTIVITES */
@@ -323,22 +324,20 @@ article.Activites{
     object-fit: cover;
     min-width: 190px;
 }
-
 img.Activites{
-    border-radius: 25px 25px 0px 0px;
-    height: 23rem;
+    border-radius: 20px 20px 0px 0px;
+    height: 28rem;
     object-fit: cover;
     max-width: 100%;
     width: 100%;
 }
-
 footer.Activites{
     padding-bottom: 15px;
     background-color: white;
     margin-top: -5px;
     padding-top: 15px;
     padding-left: 5px;
-    border-radius: 0px 0px 25px 25px;
+    border-radius: 0px 0px 20px 20px;
     font-weight: 700;
     box-shadow:  0px 0px 5px 5px #F2F2F2;
     min-height: 40px;
@@ -348,25 +347,21 @@ footer.Activites{
 
 footer.Fin{
     display: flex;
-    justify-content: space-around;
     margin: 2%;
     margin-bottom: 0px;
-    width: 96%;
+    min-height: 225px;
+    width: 95%;
     margin-top: 60px;
     background-color: #F2F2F2;
 }
-
 section.Fin{
     display: flex;
     flex-direction: column;
-    height: 200px;
-    margin-top: 45px;
+    padding: 45px 150px 45px 70px;
 }
-
 h3.Fin{
     margin-bottom: 25px;
 }
-
 a.Fin{
     margin-bottom: 15px;
 }
