@@ -24,7 +24,7 @@ body{
 header.Logo{
     display: flex;
     justify-content: space-between;
-    margin-left: 2%;
+    margin-left: 3%;
 }
 header img{
     height: 19px;
@@ -50,7 +50,7 @@ li.LogoNav:hover>.LogoNav{
 /* LOCATION */
 section.Location{
     margin-top: 63px;
-    margin-left: 2%;
+    margin-left: 3%;
 }
 form.Location{
     overflow: visible;
@@ -105,7 +105,7 @@ div.Filtres{
     display: flex;
     vertical-align: center;
     margin-top: 30px;
-    margin-left: 2%;   
+    margin-left: 3%;   
 }
 h4.Filtres{
     padding-top: 10px;
@@ -158,7 +158,7 @@ span.RechercheResult{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 2%;
+    margin-left: 3%;
     padding: 6px 9px ;
     margin-right: 10px;
 }
@@ -176,7 +176,7 @@ h3.RechercheResult{
 /* Main */
 main{
     display: flex;
-    margin: 40px 2% 60px;
+    margin: 40px 3% 60px;
 }
 section.Hebergements{
     background-color: #F2F2F2;
@@ -188,7 +188,7 @@ section.Hebergements{
 section.Populaires{
     background-color: #F2F2F2;
     margin-left: 1%;
-    border-radius: 40px;
+    border-radius: 20px;
     width: 33%;
 }
 
@@ -280,7 +280,7 @@ p.Populaires{
 }
 article.Populaires{
     background-color: white;
-    border-radius: 25px;
+    border-radius: 20px;
     margin: 30px 20px;
     padding: 1%;
     height: 150px;
@@ -299,7 +299,7 @@ aside.Populaires{
     padding-bottom: 12px;
 }
 img.Populaires{
-    border-radius: 25px 0 0 25px;
+    border-radius: 20px 0 0 20px;
     width: 35%;
     object-fit: cover;
     margin-right: 15px;
@@ -312,13 +312,13 @@ h3.Activites{
     padding: 0px;
     margin-top: 35px;
     margin-bottom: 15px;
-    margin-left: 2%;
+    margin-left: 3%;
 }
 div.Activites{
     display: grid;
     grid-template-columns: repeat(4 , 1fr);
     column-gap: 2rem;
-    margin: 4rem 2%;
+    margin: 4rem 3%;
 }
 article.Activites{
     object-fit: cover;
@@ -347,10 +347,9 @@ footer.Activites{
 
 footer.Fin{
     display: flex;
-    margin: 2%;
+    margin: 3%;
     margin-bottom: 0px;
     min-height: 225px;
-    width: 95%;
     margin-top: 60px;
     background-color: #F2F2F2;
 }
@@ -365,61 +364,101 @@ h3.Fin{
 a.Fin{
     margin-bottom: 15px;
 }
-
+/**************************************************************************/
 /* MEDIA QUERIES */
 /** TABLETTES **/
 
 @media (768px <= width < 992px ) { 
-    
+/* Global */
+body{
+    max-width: 992px;
+}
+/* FILTRES */
+li.Filtres{
+    margin-left: 10px !important;
+}
+h4.Filtres{
+    padding-top: 5px;
+}
+a.Filtres{
+    padding: 5px 10px;
+}
+/*Resultats Recherche*/
+div.RechercheResult{
+    margin-top: 35px;
+}
+/*Main*/
 main{
     flex-direction: column;
+    margin: 20px 3% 30px;
 }
+/*Hebergements*/
 section.Hebergements {
-    width: 100%;
-    margin-bottom: 50px;
-    max-width: unset;
-    padding: unset;
-    padding-bottom: 1rem;
+    width: 97%;
+    padding-right: 3%;
 }
 h3.Hebergements{
-    margin-left: 1rem;
+    margin-left: 30px;
 }
-#More{
-    margin-left: 1rem;
+article.Hebergements{
+    margin-top: 5%;
+    margin-left: 30px;
 }
+div.DescriptionHebergements{
+    padding: 3%;
+    min-height: unset;
+}
+/*Populaires*/
 section.Populaires {
-    background-color: #d9d9d9;
-    margin-left: 0px;
-    width: 100%;
-    max-width: unset;
+    width: fit-content;
+    margin: unset;
+    margin-top: 45px;
 }
 div.Populaires{
     flex-direction: row;
 }
 article.Populaires{
     height: fit-content;
-    min-height: 185px;
+    min-height: 155px;
+    min-width: 185px;
 }
 aside.Populaires{
     padding-bottom: 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 10px;
 }
 span.Populaires{
-    margin-bottom: 0.50rem;
+    margin-bottom: 0.75rem;
 }
 img.Populaires{
-    margin-right: 0px;
+    margin-right: 5px;
+    width: unset;
+    max-width: 35%;
 }
 p.Populaires{
-    margin-top: 0px;
+    margin: unset;
+}
+/* ACTIVITES */
+article.Activites{
+    min-width: unset;
+}
+img.Activites{
+    height: 180px;
+}
+footer.Activites{
+    padding: 10px 5px;
+}
+/* Footer */
+section.Fin{
+    padding: 25px 75px 25px 35px;
 }
 
 }
-/***********************************************************************/
+/**************************************************************************/
 /** PHONES **/
-@media (width <= 768px ) {   
+@media (width < 768px ) {   
     
 /* GLOBAL */
 body{
@@ -446,11 +485,7 @@ ul.LogoNav{
     padding: unset;
     padding-top: 50px;
 }
-li.LogoNav{
-    width: 50%;
-    padding: 0px;
-    margin-bottom: 1.75rem;
-}
+
 li.LogoNav:hover{
     margin: unset;
     padding: unset;
