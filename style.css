@@ -356,7 +356,7 @@ footer.Fin{
 section.Fin{
     display: flex;
     flex-direction: column;
-    padding: 45px 150px 45px 70px;
+    padding: 45px 5%;
 }
 h3.Fin{
     margin-bottom: 25px;
@@ -450,10 +450,6 @@ img.Activites{
 footer.Activites{
     padding: 10px 5px;
 }
-/* Footer */
-section.Fin{
-    padding: 25px 75px 25px 35px;
-}
 
 }
 /**************************************************************************/
@@ -467,6 +463,9 @@ body{
 }
 
 /* HEADER */
+img.Logo{
+    margin-top: 25px;
+}
 header.Logo{
     flex-direction: column;
     text-align: center;
@@ -501,6 +500,8 @@ li.LogoNav:hover>.LogoNav{
 /* LOCATION */
 section.Location{
     margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 35px;
 }
 article.Location{
     width: unset;
@@ -530,6 +531,9 @@ div.Filtres{
 h4.Filtres{
     margin: 15px;
 }
+h5.Filtres{
+    font-size: 11px;
+}
 menu.Filtres{
     width: 100%;
     display: flex;
@@ -547,7 +551,7 @@ a.Filtres{
     justify-content: flex-start;
     height: 35px;
     margin: unset;
-    padding: 0.25rem 0.80rem;
+    padding: 0.25rem 0.60rem;
     min-width: unset;
     font-weight: 700;
     border-radius: 40px;
@@ -581,8 +585,9 @@ main{
 /* Populaires */
 section.Populaires{
     margin: unset;
-    margin-top: 1.25rem;
+    margin-top: 2rem;
     padding: unset;
+    padding-bottom: 40px;
     border-radius: unset;
     width: 100%;
 }
@@ -592,6 +597,9 @@ h4.Populaires{
 h3.PopulairesTitre{
     margin: unset;
     padding: unset;
+}
+article.Populaires{
+    margin: 7px 20px;
 }
 div.PopulairesTitre{
     display: flex;
@@ -611,27 +619,32 @@ section.Hebergements{
     width: 100%;
     background-color: unset;
 }
+img.Hebergements{
+    height: 25vw;
+    max-height: 200px;
+    min-height: 105px;
+}
 div.Hebergements{
     display: flex;
     flex-direction: column;
     margin: unset ;
 }
 h3.Hebergements{
+    margin-top: 20px;
     margin-left: 1rem;
 }
 h4.Hebergements{
     margin-bottom: 0.50rem;
-    margin-top: 0.75rem;
 }
 article.Hebergements{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: unset;
-    margin: 30px 20px;
+    margin: 7px 20px;
 }
 footer.Hebergements{
-    padding-bottom: 14px;
+    padding-bottom: 7px;
 }
 footer.Hebergements>i{
     font-size: 13px;
@@ -641,7 +654,7 @@ footer.Hebergements>i{
 }
 div.DescriptionHebergements{
     padding-top: 15px;
-    padding-bottom: 12px;
+    padding-bottom: 7px;
     min-height: unset;
 }
 
@@ -655,20 +668,26 @@ div.Activites{
 a.Activites{
     margin: 1rem;
 }
+h3.Activites{
+    margin-top: 90px;
+    margin-left: 20px;
+    margin-bottom: unset;
+    font-size: 22px;
+}
 article.Activites{
     width: unset;
     margin: unset;
 }
 img.Activites{
-    height: 8rem;
+    height: 25vw;
+    max-height: 200px;
+    min-height: 105px;
     margin-bottom: -0.25rem;
 }
 footer.Activites{
     margin: unset;
     padding: unset;
-    padding-left: 1rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    padding: 20px;
     min-height: unset;
 }
 
@@ -676,12 +695,15 @@ footer.Activites{
 footer.Fin{
     display: flex;
     flex-direction: column;
+    margin: unset;
+    margin-top: 60px;
 }
 section.Fin{
     margin-top: unset;
     height: unset;
     margin-top: 1.25rem;
-    margin-left: 1.25rem;
+    margin-left: 30px;
+    padding: unset;
 }
 
 }
