@@ -123,10 +123,12 @@ menu.Filtres{
     padding: 0;
 } 
 li.Filtres{
+    width: max-content;
     border-radius: 40px;
-    margin-left: 35px;
+    margin-left: 5%;
 }
 h5.Filtres{
+    width: max-content;
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
@@ -375,7 +377,7 @@ body{
 }
 /* FILTRES */
 li.Filtres{
-    margin-left: 10px !important;
+    margin-left: 2%;
 }
 h4.Filtres{
     padding-top: 5px;
