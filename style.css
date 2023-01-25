@@ -462,8 +462,6 @@ section.Fin{
     
 /* GLOBAL */
 body{
-    margin-left: unset;
-    margin-right: unset;
     max-width: 768px;
     font-weight: 400;
 }
@@ -472,12 +470,12 @@ body{
 header.Logo{
     flex-direction: column;
     text-align: center;
-    margin-bottom: unset;
+    margin: unset;
 }
-nav.Logo{
+nav.LogoNav{
     width: 100%;
 }
-a.Logo:hover{
+a.LogoNav:hover{
     border-top: unset;
     padding-top: unset;
 }
@@ -485,41 +483,35 @@ ul.LogoNav{
     padding: unset;
     padding-top: 50px;
 }
-
+li.LogoNav{
+    width: 50%;
+    padding-bottom: 25px;
+    padding-top: unset;
+}
 li.LogoNav:hover{
     margin: unset;
     padding: unset;
     border: unset;
     border-bottom: #0065FC 3px solid;
 }
+li.LogoNav:hover>.LogoNav{
+    color: #0065FC;
+}
 
 /* LOCATION */
 section.Location{
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 1rem;
+    margin-left: 5%;
 }
 article.Location{
     width: unset;
-}
-input.Location{
-    max-width: 15rem;
-    font-weight: 700;
-    font-size: 1rem;
-    color: black;
-}
-input.Location::placeholder{
-    font-weight: 700;
-    font-size: 1rem;
-    color: black;
-}
-p.Location{
-    margin-top: 15px;    
 }
 form.Location{
     padding: unset;
     margin-top: 35px;
     overflow: visible;
+}
+button.Location{
+    padding: 0 15px;
 }
 span.LocationButton{
     display: none;
@@ -532,40 +524,40 @@ i.LocationButton{
 div.Filtres{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    margin-right: 3%;
 }
-strong.Filtres{
-    margin: 0.75rem;
+h4.Filtres{
+    margin: 15px;
 }
 menu.Filtres{
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
-    gap: 0.5rem;
-    column-gap: 1rem;
+    gap: 1rem;
+    column-gap: 5%;
     flex: 2 auto;
 }
 li.Filtres{
-    justify-content: center;
     vertical-align: middle;
-    width: 40%;
+    width: 45%;
+    margin: unset;
 }
 a.Filtres{
-    display: block;
+    justify-content: flex-start;
+    height: 35px;
     margin: unset;
-    padding: 0.50rem;
+    padding: 0.25rem 0.80rem;
     min-width: unset;
     font-weight: 700;
     border-radius: 40px;
 }
 i.Filtres{
-    font-size: 1rem;
+    font-size: 1.00rem;
     vertical-align: middle;
 }
-h4.Filtres{
-    display: inline-block;
-    font-weight: 700;
-    font-size: calc(0.66rem);
-    margin-left: 0.25rem;
-    vertical-align: middle;
+.fa-person{
+    font-size: 1.35rem !important;
 }
 p.Filtres{
     margin: unset;
@@ -574,9 +566,8 @@ p.Filtres{
 
 /* RESULTATS RECHERCHE */
 div.RechercheResult{
-    margin-top: 1rem;
+    margin-top: 35px;
 }
-
 /* MAIN */
 main{
     display: flex;
@@ -606,14 +597,9 @@ div.PopulairesTitre{
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
 }
-i.PopulairesTitre{
-    border-bottom: #0065FC 2px solid;
-    border-left: #0065FC 2px solid;
-    border-radius: 2px;
-    color: #0065FC;
+img.Populaires{
+    min-width: 135px;
 }
 
 /* HEBERGEMENTS */
@@ -628,7 +614,7 @@ section.Hebergements{
 div.Hebergements{
     display: flex;
     flex-direction: column;
-    margin-left: 0.50rem;
+    margin: unset ;
 }
 h3.Hebergements{
     margin-left: 1rem;
@@ -637,24 +623,28 @@ h4.Hebergements{
     margin-bottom: 0.50rem;
     margin-top: 0.75rem;
 }
-a.Hebergements{
-    margin: 1.25rem;
-}
 article.Hebergements{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: unset;
+    margin: 30px 20px;
 }
 footer.Hebergements{
-    margin-left: 0.50rem;
+    padding-bottom: 14px;
+}
+footer.Hebergements>i{
+    font-size: 13px;
 }
 #More{
     display: none;
 }
 div.DescriptionHebergements{
-    margin-left: 0.75rem;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    min-height: unset;
 }
+
 
 /* ACTIVITES */
 div.Activites{
