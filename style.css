@@ -359,6 +359,7 @@ section.Fin{
     display: flex;
     flex-direction: column;
     padding: 45px 5%;
+    margin-right: 75px;
 }
 h3.Fin{
     margin-bottom: 25px;
@@ -447,10 +448,14 @@ article.Activites{
     min-width: unset;
 }
 img.Activites{
-    height: 180px;
+    height: 280px;
 }
 footer.Activites{
-    padding: 10px 5px;
+    padding: 20px 30px;
+}
+
+section.Fin{
+    margin: 15px;
 }
 
 }
